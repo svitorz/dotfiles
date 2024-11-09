@@ -14,7 +14,6 @@ plugins=(zsh-autosuggestions zsh-syntax-highlighting laravel debian docker-compo
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#CCCCCC' 
 #Adicionando mkcd
-# ~/.bashrc
 function mkcd() {
   if [ ! -n "$1" ]; then
     echo "Enter a directory name"
@@ -41,10 +40,10 @@ function mkcd() {
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
 # zstyle ':omz:update' mode auto      # update automatically without asking
-# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
-# zstyle ':omz:update' frequency 13
+zstyle ':omz:update' frequency 15
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -56,7 +55,7 @@ function mkcd() {
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -115,10 +114,28 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
+export EDITOR="nvim"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 alias lzd='lazydocker'
 alias sail=sh $([ -f sail ] && echo sail || echo vendor/bin/sail)
-.zshrc
+
+#Lackluster theme colors:
+export COLOR_RESET=$'\x1b[0m'
+export COLOR_LACK=$'\x1b[38;2;112;128;144m'
+export COLOR_LUSTER=$'\x1b[38;2;222;238;237m'
+export COLOR_ORANGE=$'\x1b[38;2;255;170;136m'
+export COLOR_GREEN=$'\x1b[38;2;120;153;120m'
+export COLOR_BLUE=$'\x1b[38;2;119;136;170m'
+export COLOR_RED=$'\x1b[38;2;215;0;0m'
+export COLOR_BLACK=$'\x1b[38;2;0;0;0m'
+export COLOR_GRAY1=$'\x1b[38;2;8;8;8m'
+export COLOR_GRAY2=$'\x1b[38;2;25;25;25m'
+export COLOR_GRAY3=$'\x1b[38;2;42;42;42m'
+export COLOR_GRAY4=$'\x1b[38;2;68;68;68m'
+export COLOR_GRAY5=$'\x1b[38;2;85;85;85m'
+export COLOR_GRAY6=$'\x1b[38;2;122;122;122m'
+export COLOR_GRAY7=$'\x1b[38;2;170;170;170m'
+export COLOR_GRAY8=$'\x1b[38;2;204;204;204m'
+export COLOR_GRAY9=$'\x1b[38;2;221;221;221m'
