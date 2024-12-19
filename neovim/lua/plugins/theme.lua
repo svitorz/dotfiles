@@ -1,86 +1,99 @@
--- [nfnl] Compiled from fnl/plugins/theme.fnl by https://github.com/Olical/nfnl, do not edit.
-local function _1_()
-  return vim.opt.rtp:append((vim.fn.stdpath("data") .. "/lazy/onehalf/vim"))
-end
-local function _2_()
-  local rose_pine = require("rose-pine")
-  return rose_pine.setup({ variant = "moon", styles = { transparency = true }, dim_inactive_windows = false })
-end
-local function _3_()
-  local theme = require("tokyonight")
-  local theme_util = require("tokyonight.util")
-  local function _4_(colors)
-    colors.bg_statusline = theme_util.darken(colors.bg_dark, 0.5)
-    return nil
-  end
-  local function _5_(highlight, colors)
-    highlight.String = { fg = colors.green2 }
-    highlight.TelescopeNormal = { bg = colors.bg_statusline, fg = colors.fg_dark }
-    highlight.TelescopeBorder = { bg = colors.bg_statusline, fg = colors.fg_dark }
-    highlight.NvimTreeNormal = { bg = colors.bg_statusline, fg = colors.fg_dark }
-    highlight.NvimTreeNormalNC = { bg = colors.bg_statusline, fg = colors.fg_dark }
-    highlight.NvimTreeWinSeparator = { bg = colors.bg_statusline, fg = colors.bg_dark }
-    highlight.FloatBorder = { bg = colors.bg_statusline, fg = colors.fg_dark }
-    highlight.ColorColumn = { bg = colors.bg_statusline, fg = colors.fg_dark }
-    highlight.Pmenu = { bg = colors.bg_statusline, fg = colors.fg_dark }
-    highlight.NonText = { fg = theme_util.lighten(colors.bg, 0.9) }
-    return nil
-  end
-  return theme.setup({
-    style = "night",
-    styles = {
-      comments = { italic = true },
-      floats = "dark",
-      functions = {},
-      keywords = { italic = true },
-      sidebars = "dark",
-      variables = {},
+local lackluster = require("lackluster")
+
+lackluster.setup({
+  disable_plugin = {
+    bufferline = false,
+    cmp = false,
+    dashboard = false,
+    flash = false,
+    git_gutter = false,
+    git_signs = false,
+    headline = false,
+    indentmini = false,
+    lazy = false,
+    lightbulb = false,
+    lsp_config = false,
+    mason = false,
+    mini_diff = false,
+    navic = false,
+    noice = false,
+    notify = false,
+    oil = false,
+    rainbow_delimiter = false,
+    scollbar = false,
+    telescope = false,
+    todo_comments = false,
+    tree = false,
+    trouble = false,
+    which_key = false,
+    yanky = false,
+  },
+  tweak_color = {
+    lack = "#888888",
+    green = "#636363",
+    orange = "default",
+    yellow = "default",
+    blue = "default",
+    red = "default",
+  },
+  tweak_background = {
+    normal = "#0A0A0A",
+    telescope = "#0A0A0A",
+    menu = "#0A0A0A",
+    popup = "#0A0A0A",
+    lualine = "#0A0A0A",
+    neotree = "#0A0A0A",
+  },
+  tweak_highlight = {
+    ["@keyword"] = { italic = true },
+    spellcap = { link = "normal", overwrite = true, undercurl = false },
+  },
+})
+
+local neotree = require("neo-tree")
+
+neotree.setup({
+  default_component_configs = {
+    container = {
+      enable_character_fade = true,
     },
-    on_colors = _4_,
-    on_highlights = _5_,
-    terminal_colors = true,
-  })
-end
-local function _6_()
-  do
-    local lackluster = require("lackluster")
-    lackluster.setup({
-      tweak_background = {
-        normal = "#000000",
-        telescope = "#000000",
-        menu = "#000000",
-        popup = "#000000",
-        lualine = "#000000",
-      },
-    })
-  end
-  return vim.cmd("colorscheme lackluster")
-end
-return {
-  { "maxmx03/solarized.nvim", priority = 1000, lazy = false },
-  { "crispgm/nord-vim", priority = 1000, lazy = false },
-  { "ramojus/mellifluous.nvim", priority = 1000, lazy = false },
-  { "sonph/onehalf", priority = 1000, config = _1_, lazy = false },
-  {
-    "rose-pine/neovim",
-    name = "rose-pine",
-    priority = 1000,
-    dependencies = { "rktjmp/lush.nvim", "nvim-tree/nvim-web-devicons" },
-    config = _2_,
-    lazy = false,
+    icon = {
+      folder_closed = "",
+      folder_open = "",
+      folder_empty = "",
+      default = "",
+    },
+    modified = {
+      symbol = "[+]",
+      highlight = "NeoTreeModified",
+    },
   },
-  {
-    "folke/tokyonight.nvim",
-    priority = 1000,
-    dependencies = { "nvim-tree/nvim-web-devicons" },
-    config = _3_,
-    lazy = false,
+  window = {
+    position = "left",
+    width = 30,
+    mappings = {
+      ["<space>"] = "none",
+    },
   },
-  {
-    "slugbyte/lackluster.nvim",
-    priority = 1000,
-    dependencies = { "rktjmp/lush.nvim", "nvim-tree/nvim-web-devicons" },
-    config = _6_,
-    lazy = false,
+  filesystem = {
+    filtered_items = {
+      visible = true,
+      hide_dotfiles = false,
+      hide_gitignored = false,
+    },
+    follow_current_file = true,
   },
-}
+})
+
+vim.cmd([[
+      highlight NeoTreeNormal guibg=#0A0A0A
+      highlight NeoTreeEndOfBuffer guibg=#0A0A0A
+      highlight NeoTreeWinSeparator guibg=#0A0A0A guifg=#0A0A0A
+      highlight NeoTreeNormal guibg=#0A0A0A
+      highlight NeoTreeNormalNC guibg=#0A0A0A
+
+      " Ajustar separadores e janela inativa
+      highlight Normal guibg=#0A0A0A
+      highlight NormalNC guibg=#0A0A0A
+]])
+vim.cmd.colorscheme("lackluster")
