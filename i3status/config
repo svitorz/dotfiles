@@ -1,0 +1,25 @@
+general {
+    output_format = "i3bar"
+    interval = 1
+}
+
+order += "time"
+order += "wireless wlan0"
+order += "exec ~/scriptbluetooth_status.sh"
+order += "battery"
+order += "exec ~/scripts/volume_status.sh" 
+
+time {
+    format = "%A, %d/%m/%y, %H:%M:%S"
+}
+
+wireless wlan0 {
+    format_up = "WiFi: %quality"
+    format_down = "WiFi: Down"
+}
+
+battery 0 {
+    format = "Battery: %status %percentage"
+    low_threshold = 10
+    threshold_type = percentage
+}
