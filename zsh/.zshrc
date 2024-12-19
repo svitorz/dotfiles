@@ -117,3 +117,5 @@ function mkcd() {
 alias src="source ~/.zshrc"
 alias lzd=lazydocker
 alias lzg=lazygit
+export TERMINAL=alacritty
+

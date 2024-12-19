@@ -1,0 +1,15 @@
+general.import = [
+  "~/.config/alacritty/custom/lackluster.toml"
+]
+
+[font.normal]
+family = "JetBrainsMono"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono"
+style = "Italic"
