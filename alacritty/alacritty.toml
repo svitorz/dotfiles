@@ -13,3 +13,13 @@ style = "Bold"
 [font.italic]
 family = "JetBrainsMono"
 style = "Italic"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control|Shift"
