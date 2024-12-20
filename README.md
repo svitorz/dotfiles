@@ -50,3 +50,4 @@ Sinta-se à vontade para enviar pull requests ou abrir issues com sugestões e m
 Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais informações.
 
 ---
+
