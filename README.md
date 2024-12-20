@@ -50,7 +50,3 @@ Sinta-se à vontade para enviar pull requests ou abrir issues com sugestões e m
 Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais informações.
 
 ---
-
-Para mais informações sobre como gerenciar e personalizar seus dotfiles, você pode assistir ao seguinte vídeo:
-
- 
