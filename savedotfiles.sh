@@ -6,5 +6,4 @@ cp -r ~/.tmux.conf ~/dotfiles/tmux/
 cp -r ~/.zshrc ~/dotfiles/zsh/
 cp -r ~/savedotfiles.sh ~/dotfiles/
 echo "Dotfiles salvos com sucesso!"
-cd ~/dotfiles
 echo "Faça seu commit para o github."

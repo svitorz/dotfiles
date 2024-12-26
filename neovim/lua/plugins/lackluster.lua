@@ -54,8 +54,10 @@ return {
       },
     })
   end,
-  config = function()
-    -- Configura o esquema de cores
-    vim.cmd.colorscheme("lackluster")
-  end,
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "lackluster",
+    },
+  },
 }
