@@ -119,3 +119,4 @@ alias lzd=lazydocker
 alias lzg=lazygit
 export TERMINAL=alacritty
 
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden'
