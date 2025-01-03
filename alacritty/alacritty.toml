@@ -1,6 +1,4 @@
-general.import = [
-  "~/.config/alacritty/custom/lackluster.toml"
-]
+general.import = ["~/.config/alacritty/custom/lackluster.toml"]
 
 [font.normal]
 family = "JetBrainsMono"
