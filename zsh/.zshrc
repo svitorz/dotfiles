@@ -121,3 +121,4 @@ export TERMINAL=alacritty
 alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden'
 alias phpdoc='docker run --rm -v /home/svitorz:/data phpdoc/phpdoc'
+alias sa='sail artisan'

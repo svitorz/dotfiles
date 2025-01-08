@@ -1,15 +1,19 @@
 general.import = ["~/.config/alacritty/custom/lackluster.toml"]
 
+
+window.decorations = "full"
+
+
 [font.normal]
-family = "JetBrainsMono"
+family = "Fira Code"
 style = "Regular"
 
 [font.bold]
-family = "JetBrainsMono"
+family = "Fira Code"
 style = "Bold"
 
 [font.italic]
-family = "JetBrainsMono"
+family = "Fira Code"
 style = "Italic"
 
 [[keyboard.bindings]]
