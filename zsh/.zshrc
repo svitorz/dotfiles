@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="half-life"
+ZSH_THEME="nicoulaj"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -70,10 +70,11 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-autocomplete laravel debian docker-compose asdf archlinux)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting laravel debian docker-compose asdf archlinux)
 
 source $ZSH/oh-my-zsh.sh
 
+setopt autolist
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -115,10 +116,16 @@ function mkcd() {
   fi
 }
 alias src="source ~/.zshrc"
+
 alias lzd=lazydocker
+
 alias lzg=lazygit
+
 export TERMINAL=alacritty
+
 alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
+
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden'
-alias phpdoc='docker run --rm -v /home/svitorz:/data phpdoc/phpdoc'
+
+# run sail and artisan simply
 alias sa='sail artisan'
