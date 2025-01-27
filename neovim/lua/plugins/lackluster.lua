@@ -3,7 +3,6 @@ return {
   lazy = false,
   priority = 1000,
   init = function()
-    -- Configuração inicial do lackluster
     require("lackluster").setup({
       disable_plugin = {
         bufferline = false,
@@ -41,12 +40,22 @@ return {
         red = "default",
       },
       tweak_background = {
-        normal = "#0A0A0A",
-        telescope = "#0A0A0A",
-        menu = "#0A0A0A",
-        popup = "#0A0A0A",
-        lualine = "#0A0A0A",
-        neotree = "#0A0A0A",
+        normal = "#000000",
+        telescope = "#000000",
+        menu = "#0000000",
+        popup = "#000000",
+        lualine = "#0000000",
+        neotree = "#0000000",
+      },
+      tweak_syntax = {
+        string = "#ffffff",
+        string_escape = "default",
+        comment = "#434A42",
+        builtin = "default", -- builtin modules and functions
+        type = "default",
+        keyword = "#cccccc",
+        keyword_return = "default",
+        keyword_exception = "default",
       },
       tweak_highlight = {
         ["@keyword"] = { italic = true },
