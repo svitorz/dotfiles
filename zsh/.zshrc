@@ -129,3 +129,6 @@ export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden'
 
 # run sail and artisan simply
 alias sa='sail artisan'
+
+#open vscode without stop the terminal
+alias code='nohup ~/VSCode-linux-x64/code &'
