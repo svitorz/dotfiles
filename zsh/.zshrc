@@ -131,4 +131,17 @@ export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden'
 alias sa='sail artisan'
 
 #open vscode without stop the terminal
-alias code='nohup ~/VSCode-linux-x64/code &'
+alias code='/home/svitorz/VSCode-linux-x64/code'
+alias stripe='/home/svitorz/stripe/stripe'
+
+alias start='/home/svitorz/start_tmux.sh'
+
+alias duster="./vendor/bin/duster"
+
+alias stop="paclean  --noconfirm && pacupd  --noconfirm && pacupg  --noconfirm && shutdown now"
+
+alias fix="sail bin duster fix"
+
+alias up="pacupd --noconfirm && pacupg --noconfirm && upgrade --noconfirm && sudo pacman -Syu --noconfirm"
+
+alias clean="paclean --noconfirm && sudo pacman -Scc --noconfirm && paclr --noconfirm && rm -rf ~/.cache/*"

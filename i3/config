@@ -112,8 +112,7 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 #open firefox
-bindsym $mod+z exec firefox
-
+bindsym $mod+z exec firefox 
 #open spotifiy
 bindsym $mod+c exec spotify-launcher
 
