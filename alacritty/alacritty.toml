@@ -1,8 +1,4 @@
-general.import = ["~/.config/alacritty/custom/lackluster.toml"]
-
-
 window.decorations = "full"
-
 
 [font.normal]
 family = "Fira Code"
@@ -25,3 +21,35 @@ mods = "Control|Shift"
 action = "Paste"
 key = "V"
 mods = "Control|Shift"
+
+[colors.primary]
+background = "#000000"
+foreground = "#888888"
+
+[colors.normal]
+black = "#000000"
+red = "#cc6666"
+green = "#636363"
+yellow = "#e6c900"
+blue = "#6699cc"
+magenta = "#cc66cc"
+cyan = "#66cccc"
+white = "#ffffff"
+
+[colors.bright]
+black = "#555555"
+red = "#ff6666"
+green = "#66cc66"
+yellow = "#ffcc66"
+blue = "#66ccff"
+magenta = "#ff66ff"
+cyan = "#66ffff"
+white = "#ffffff"
+
+[colors.cursor]
+text = "#000000"
+cursor = "#888888"
+
+[colors.selection]
+text = "#000000"
+background = "#888888"

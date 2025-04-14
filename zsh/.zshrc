@@ -144,4 +144,8 @@ alias fix="sail bin duster fix"
 
 alias up="pacupd --noconfirm && pacupg --noconfirm && upgrade --noconfirm && sudo pacman -Syu --noconfirm"
 
-alias clean="paclean --noconfirm && sudo pacman -Scc --noconfirm && paclr --noconfirm && rm -rf ~/.cache/*"
+alias clean="paclean --noconfirm && sudo pacman -Scc --noconfirm && paclr --noconfirm && sudo paccache -r"
+
+alias optimize='sail artisan optimize:clear && sail artisan config:clear && sail artisan route:clear && sail artisan view:clear && sail artisan cache:clear && sail artisan config:cache && sail artisan route:cache && sail artisan view:cache && echo "🚀 Laravel otimizado com sucesso!"'
+
+alias pint='./vendor/bin/pint'
