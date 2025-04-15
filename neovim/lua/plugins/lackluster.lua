@@ -37,6 +37,13 @@ return {
         ["@keyword"] = { italic = true },
         spellcap = { link = "normal", overwrite = true, undercurl = false },
       },
+      custom_highlights = function()
+        return {
+          NeoTreeNormal = { bg = "#000000" },
+          NeoTreeNormalNC = { bg = "#000000" },
+          NeoTreeEndOfBuffer = { bg = "#000000" },
+        }
+      end,
     })
     vim.cmd.colorscheme("lackluster")
   end,

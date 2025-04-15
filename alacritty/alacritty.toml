@@ -23,33 +23,34 @@ key = "V"
 mods = "Control|Shift"
 
 [colors.primary]
-background = "#000000"
-foreground = "#888888"
+background = "#000000"  # preto total
+foreground = "#888888"  # cinza claro para o texto principal
 
 [colors.normal]
-black = "#000000"
-red = "#cc6666"
-green = "#636363"
-yellow = "#e6c900"
-blue = "#6699cc"
-magenta = "#cc66cc"
-cyan = "#66cccc"
-white = "#ffffff"
+black   = "#000000"
+red     = "#cc6666"     # vermelho desbotado
+green   = "#636363"     # verde acinzentado
+yellow  = "#b5bd68"     # amarelo esverdeado, neutro
+blue    = "#6699cc"     # azul pastel
+magenta = "#b294bb"     # roxo frio
+cyan    = "#66cccc"     # ciano clarinho
+white   = "#ffffff"
 
 [colors.bright]
-black = "#555555"
-red = "#ff6666"
-green = "#66cc66"
-yellow = "#ffcc66"
-blue = "#66ccff"
-magenta = "#ff66ff"
-cyan = "#66ffff"
-white = "#ffffff"
+black   = "#555555"
+red     = "#ff6c6b"     # vermelho mais forte
+green   = "#66cc66"
+yellow  = "#e6c547"     # amarelo puxando pro ouro
+blue    = "#66ccff"
+magenta = "#c594c5"
+cyan    = "#66ffff"
+white   = "#f8f8f2"
 
 [colors.cursor]
-text = "#000000"
+text   = "#000000"
 cursor = "#888888"
 
 [colors.selection]
-text = "#000000"
+text       = "#000000"
 background = "#888888"
+
