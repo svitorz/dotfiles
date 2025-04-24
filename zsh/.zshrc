@@ -148,4 +148,6 @@ alias clean="paclean --noconfirm && sudo pacman -Scc --noconfirm && paclr --noco
 
 alias optimize='sail artisan optimize:clear && sail artisan config:clear && sail artisan route:clear && sail artisan view:clear && sail artisan cache:clear && sail artisan config:cache && sail artisan route:cache && sail artisan view:cache && echo "🚀 Laravel otimizado com sucesso!"'
 
-alias pint='./vendor/bin/pint'
+alias pint='./vendor/bin/pint'\
+
+alias phpdoc="docker run --rm -v '$(pwd):/data' phpdoc/phpdoc:3"
