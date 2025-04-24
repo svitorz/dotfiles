@@ -7,3 +7,9 @@ vim.api.nvim_set_keymap(
   ":silent! !prettier --write % || php-cs-fixer fix %<CR>",
   { noremap = true, silent = true }
 )
+vim.api.nvim_set_keymap(
+  "n",
+  "<Leader>nf",
+  ":lua require('neogen').generate({ type = 'func' })<CR>",
+  { noremap = true, silent = true }
+)
