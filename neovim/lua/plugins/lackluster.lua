@@ -23,6 +23,7 @@ return {
         lualine = "#0000000",
         neotree = "#0000000",
       },
+
       tweak_syntax = {
         string = "#ffffff",
         string_escape = "default",
@@ -33,10 +34,23 @@ return {
         keyword_return = "default",
         keyword_exception = "default",
       },
+
       tweak_highlight = {
-        ["@keyword"] = { italic = true },
+        -- Deixa a palavra-chave 'function', 'func', etc. em roxo
+        ["@keyword.function"] = { fg = "#a277ff", italic = true },
+
+        -- Deixa o nome da função em branco
+        ["@function"] = { fg = "#ffffff" },
+
+        -- Se quiser garantir que chamadas também fiquem brancas
+        ["@function.call"] = { fg = "#ffffff" },
+
+        -- Outros ajustes que você já tinha
+        ["@keyword"] = { fg = "#a277ff", italic = true },
+        ["@keyword.return"] = { fg = "#a277ff" },
         spellcap = { link = "normal", overwrite = true, undercurl = false },
       },
+
       custom_highlights = function()
         return {
           NeoTreeNormal = { bg = "#000000" },
