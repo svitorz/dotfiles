@@ -59,6 +59,5 @@ return {
         }
       end,
     })
-    vim.cmd.colorscheme("lackluster")
   end,
 }
