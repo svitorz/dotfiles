@@ -7,13 +7,13 @@ return {
   },
   config = function()
     vim.cmd([[
-        highlight NeoTreeNormal guibg=#0A0A0A
-        highlight NeoTreeEndOfBuffer guibg=#0A0A0A
-        highlight NeoTreeWinSeparator guibg=#0A0A0A guifg=#0A0A0A
-        highlight NeoTreeNormal guibg=#0A0A0A
-        highlight NeoTreeNormalNC guibg=#0A0A0A
-        highlight Normal guibg=#0A0A0A
-        highlight NormalNC guibg=#0A0A0A
+        highlight NeoTreeNormal guibg=#000000
+        highlight NeoTreeEndOfBuffer guibg=#000000
+        highlight NeoTreeWinSeparator guibg=#000000 guifg=#000000
+        highlight NeoTreeNormal guibg=#000000
+        highlight NeoTreeNormalNC guibg=#000000
+        highlight Normal guibg=#000000
+        highlight NormalNC guibg=#000000
     ]])
   end,
 }
