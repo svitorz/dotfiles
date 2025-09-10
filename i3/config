@@ -122,6 +122,8 @@ bindsym $mod+n exec libreoffice
 # open slack 
 bindsym $mod+b exec slack
 
+bindsym $mod+m exec pcmanfm
+
 # lock screen
 bindsym F10 exec i3lock -c 000022
 
