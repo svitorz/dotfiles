@@ -15,9 +15,6 @@ return {
     opts = { use_diagnostic_signs = true },
   },
 
-  -- disable trouble
-  { "folke/trouble.nvim", enabled = false },
-
   -- override nvim-cmp and add cmp-emoji
   {
     "hrsh7th/nvim-cmp",
@@ -74,6 +71,10 @@ return {
           -- stylua: ignore
           vim.keymap.set( "n", "<leader>co", "TypescriptOrganizeImports", { buffer = buffer, desc = "Organize Imports" })
           vim.keymap.set("n", "<leader>cR", "TypescriptRenameFile", { desc = "Rename File", buffer = buffer })
+          require("lspconfig").lua_ls.setup({})
+          require("lspconfig").clojure_lsp.setup({})
+          require("lspconfig").java_language_server.setup({})
+          require("lspconfig").intelephense.setup({})
         end)
       end,
     },

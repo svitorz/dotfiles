@@ -6,12 +6,12 @@ return {
         settings = {
           gopls = {
             formatting = {
-              organizeImports = false,
-              gofumpt = false,
+              organizeImports = true,
+              gofumpt = true,
             },
             ui = {
               completion = {
-                usePlaceholders = false,
+                usePlaceholders = true,
               },
             },
           },

@@ -119,7 +119,8 @@ return {
     })
 
     -- Mapeamentos de teclado globais para o Neo-tree
-    vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", { noremap = true, silent = true })
+    vim.keymap.del("n", "<leader>e")
+    vim.keymap.set("n", "<leader>n", ":Neotree toggle<CR>", { noremap = true, silent = true })
     vim.keymap.set("n", "<leader>o", ":Neotree focus<CR>", { noremap = true, silent = true })
   end,
 }

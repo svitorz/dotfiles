@@ -5,8 +5,9 @@ return {
       lua = { "stylua" },
       javascript = { "prettier" },
       typescript = { "prettier" },
-      php = { "pint" },
-      blade = { "blade-formatter" }, -- 👈 aqui está o que queremos
+      php = { "php_cs_fixer" },
+      blade = { "blade-formatter" },
+      go = { "gofmt" },
     },
     format_on_save = {
       lsp_fallback = true,
