@@ -151,3 +151,7 @@ alias optimize='sail artisan optimize:clear && sail artisan config:clear && sail
 alias pint='./vendor/bin/pint'\
 
 alias phpdoc="docker run --rm -v '$(pwd):/data' phpdoc/phpdoc:3"
+
+alias pt="setxkbmap -layout br abnt2"
+
+alias us="setxkbmap -layout us -variant intl -model pc105"

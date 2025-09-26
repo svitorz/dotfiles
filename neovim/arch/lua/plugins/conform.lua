@@ -5,7 +5,7 @@ return {
       lua = { "stylua" },
       javascript = { "prettier" },
       typescript = { "prettier" },
-      php = { "php_cs_fixer" },
+      php = { "intelephense" },
       blade = { "blade-formatter" },
       go = { "gofmt" },
     },
