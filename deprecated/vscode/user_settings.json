@@ -1,0 +1,166 @@
+{
+  "workbench.iconTheme": "vscode-icons",
+  "git.ignoreMissingGitWarning": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.formatOnSave": true
+  },
+  "[php]": {
+    "editor.defaultFormatter": "DEVSENSE.phptools-vscode",
+    "editor.formatOnSave": true
+  },
+  "editor.minimap.enabled": false,
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": true,
+    "php": true
+  },
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.codeActionsOnSave": {},
+  // Controls whether bracket pair colorization is enabled or not. Use 'workbench.colorCustomizations' to override the bracket highlight colors.
+  "editor.bracketPairColorization.enabled": true,
+  // Controls whether the editor should render indent guides.
+  "editor.guides.indentation": true,
+  // Controls whether bracket pair guides are enabled or not.
+  //  - true: Enables bracket pair guides.
+  //  - active: Enables bracket pair guides only for the active bracket pair.
+  //  - false: Disables bracket pair guides.
+  "editor.guides.bracketPairs": "active",
+  // Controls whether horizontal bracket pair guides are enabled or not.
+  //  - true: Enables horizontal guides as addition to vertical bracket pair guides.
+  //  - active: Enables horizontal guides only for the active bracket pair.
+  //  - false: Disables horizontal bracket pair guides.
+  "editor.guides.bracketPairsHorizontal": "active",
+  // Controls whether the editor should highlight the active indent guide.
+  "editor.guides.highlightActiveIndentation": true,
+  // Controls whether bracket pair guides are enabled or not.
+  "editor.guides.highlightActiveBracketPair": true,
+  // Defines the bracket symbols that increase or decrease the indentation.
+  "editor.language.brackets": [
+    ["[", "]"],
+    ["(", ")"],
+    ["{", "}"]
+  ],
+  "editor.fontSize": 20,
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingDelete": "always",
+  "window.titleBarStyle": "custom",
+  "editor.stickyScroll.enabled": true,
+  "editor.mouseWheelZoom": true,
+  "explorer.compactFolders": false,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+
+  "[ruby]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "editor.rulers": [120],
+    "editor.semanticHighlighting.enabled": true
+  },
+  "workbench.settings.applyToAllProfiles": ["editor.fontFamily"],
+  "window.customTitleBarVisibility": "auto",
+  "workbench.editor.openSideBySideDirection": "down",
+  "workbench.sideBar.location": "right",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "files.autoSave": "onWindowChange",
+  "emmet.includeLanguages": {
+    "erb": "html",
+    "html.erb": "html",
+    "vue": "html",
+    "blade.php": "html"
+  },
+  "files.associations": {
+    "*.embeddedhtml": "html",
+    "*.blade.php": "html"
+  },
+  "git.autofetch": true,
+  "workbench.panel.showLabels": false,
+  "yaml.schemas": {
+    "file:///home/svitorz/.vscode/extensions/atlassian.atlascode-3.4.7/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "chat.commandCenter.enabled": false,
+  "workbench.navigationControl.enabled": false,
+  "window.menuBarVisibility": "compact",
+  "workbench.colorCustomizations": {
+    // Base UI Colors
+    "editor.background": "#080808",
+    "editor.foreground": "#deeeed",
+    "activityBar.background": "#080808",
+    "activityBar.foreground": "#deeeed",
+    "sideBar.background": "#080808",
+    "sideBar.foreground": "#cccccc",
+
+    // Status Bar
+    "statusBar.background": "#080808",
+    "statusBar.foreground": "#aaaaaa",
+    "statusBar.noFolderBackground": "#2a2a2a",
+
+    // Title Bar
+    "titleBar.activeBackground": "#080808",
+    "titleBar.activeForeground": "#deeeed",
+    "titleBar.inactiveBackground": "#191919",
+    "titleBar.inactiveForeground": "#7a7a7a",
+
+    // Tabs
+    "tab.activeBackground": "#2a2a2a",
+    "tab.activeForeground": "#deeeed",
+    "tab.inactiveBackground": "#191919",
+    "tab.inactiveForeground": "#7a7a7a",
+
+    // Editor Elements
+    "editor.lineHighlightBackground": "#2a2a2a",
+    "editor.selectionBackground": "#444444",
+    "editorCursor.foreground": "#ffaa88",
+    "editorLineNumber.foreground": "#555555",
+    "editorLineNumber.activeForeground": "#7a7a7a",
+
+    // Sidebar Elements
+    "list.activeSelectionBackground": "#2a2a2a",
+    "list.activeSelectionForeground": "#deeeed",
+    "list.hoverBackground": "#444444",
+    "list.hoverForeground": "#deeeed",
+
+    // Panel
+    "panel.background": "#191919",
+    "panel.border": "#2a2a2a",
+    "panelTitle.activeForeground": "#deeeed",
+    "panelTitle.inactiveForeground": "#7a7a7a",
+
+    // Terminal
+    "terminal.background": "#191919",
+    "terminal.foreground": "#deeeed",
+    "terminal.ansiBlack": "#0A0A0A",
+    "terminal.ansiBlue": "#7788AA",
+    "terminal.ansiGreen": "#789978",
+    "terminal.ansiRed": "#D70000",
+    "terminal.ansiWhite": "#DDDDDD",
+
+    // Input Controls
+    "input.background": "#2a2a2a",
+    "input.foreground": "#deeeed",
+    "input.placeholderForeground": "#7a7a7a",
+
+    // Scrollbar
+    "scrollbarSlider.background": "#44444480",
+    "scrollbarSlider.hoverBackground": "#55555580",
+    "scrollbarSlider.activeBackground": "#7a7a7a80"
+  },
+
+  "editor.tokenColorCustomizations": {
+    "comments": "#708090",
+    "strings": "#ffaa88",
+    "keywords": "#7788AA",
+    "functions": "#789978",
+    "numbers": "#ffaa88",
+    "variables": "#deeeed"
+  }
+}
