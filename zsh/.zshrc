@@ -103,7 +103,7 @@ setopt autolist
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
+#
 # The mkcd function, to create a directory and enter it
 
 function mkcd() {
@@ -127,14 +127,33 @@ alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
 
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden'
 
+# run sail and artisan simply
+alias sa='sail artisan'
+
+alias stripe='/home/svitorz/stripe'
+
 alias start='/home/svitorz/start_tmux.sh'
 
 alias duster="./vendor/bin/duster"
 
+alias stop="paclean  --noconfirm && pacupd  --noconfirm && pacupg  --noconfirm && shutdown now"
+
 alias fix="sail bin duster fix"
+
+alias up="pacupd --noconfirm && pacupg --noconfirm && upgrade --noconfirm && sudo pacman -Syu --noconfirm"
+
+alias clean="paclean --noconfirm && sudo pacman -Scc --noconfirm && paclr --noconfirm && sudo paccache -r"
 
 alias optimize='sail artisan optimize:clear && sail artisan config:clear && sail artisan route:clear && sail artisan view:clear && sail artisan cache:clear && sail artisan config:cache && sail artisan route:cache && sail artisan view:cache && echo "🚀 Laravel otimizado com sucesso!"'
 
-alias pt="setxkbmap -layout br abnt2"
+alias pint='./vendor/bin/pint'\
 
-alias us="setxkbmap -layout us -variant intl -model pc105"
+alias phpdoc="docker run --rm -v '$(pwd):/data' phpdoc/phpdoc:3"
+
+alias go="/home/svitorz/go/go"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completionexport PATH="$HOME/.fzf/bin:$PATH
+
+export PATH="$HOME/.fzf/bin:$PATH"
